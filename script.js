@@ -110,6 +110,8 @@ function storeBookmark(evt) {
         return false;
     }
     if (!urlValue.includes('http://', 'https://')) {
+        console.log(urlValue);
+        console.log('inside block')
         urlValue = `https://${urlValue}`;
     }
     if (!validate(nameValue, urlValue)) {
